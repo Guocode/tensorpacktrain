@@ -1,0 +1,239 @@
+[32m[1212 21:15:13 @logger.py:85][0m Argv: C:/Users/Guo/PycharmProjects/untitled4/train.py
+[32m[1212 21:15:13 @input_source.py:219][0m Setting up the queue 'QueueInput/input_queue' for CPU prefetching ...
+[32m[1212 21:15:13 @trainers.py:52][0m Building graph for a single training tower ...
+[32m[1212 21:15:15 @registry.py:121][0m conv0 input: [None, 3, 96, 96]
+[32m[1212 21:15:15 @registry.py:129][0m conv0 output: [None, 64, 96, 96]
+[32m[1212 21:15:15 @registry.py:121][0m res0.0/conv1 input: [None, 64, 96, 96]
+[32m[1212 21:15:15 @registry.py:129][0m res0.0/conv1 output: [None, 32, 96, 96]
+[32m[1212 21:15:15 @registry.py:121][0m res0.0/conv2 input: [None, 32, 96, 96]
+[32m[1212 21:15:15 @registry.py:129][0m res0.0/conv2 output: [None, 32, 96, 96]
+[32m[1212 21:15:15 @registry.py:121][0m res0.0/shortcut input: [None, 64, 96, 96]
+[32m[1212 21:15:15 @registry.py:129][0m res0.0/shortcut output: [None, 32, 96, 96]
+[32m[1212 21:15:15 @registry.py:121][0m res0.1/conv1 input: [None, 32, 96, 96]
+[32m[1212 21:15:15 @registry.py:129][0m res0.1/conv1 output: [None, 32, 96, 96]
+[32m[1212 21:15:15 @registry.py:121][0m res0.1/conv2 input: [None, 32, 96, 96]
+[32m[1212 21:15:15 @registry.py:129][0m res0.1/conv2 output: [None, 32, 96, 96]
+[32m[1212 21:15:15 @registry.py:121][0m res1.0/conv1 input: [None, 32, 96, 96]
+[32m[1212 21:15:15 @registry.py:129][0m res1.0/conv1 output: [None, 64, 48, 48]
+[32m[1212 21:15:15 @registry.py:121][0m res1.0/conv2 input: [None, 64, 48, 48]
+[32m[1212 21:15:15 @registry.py:129][0m res1.0/conv2 output: [None, 64, 48, 48]
+[32m[1212 21:15:15 @registry.py:121][0m res1.0/shortcut input: [None, 32, 96, 96]
+[32m[1212 21:15:15 @registry.py:129][0m res1.0/shortcut output: [None, 64, 48, 48]
+[32m[1212 21:15:15 @registry.py:121][0m res1.1/conv1 input: [None, 64, 48, 48]
+[32m[1212 21:15:15 @registry.py:129][0m res1.1/conv1 output: [None, 64, 48, 48]
+[32m[1212 21:15:15 @registry.py:121][0m res1.1/conv2 input: [None, 64, 48, 48]
+[32m[1212 21:15:15 @registry.py:129][0m res1.1/conv2 output: [None, 64, 48, 48]
+[32m[1212 21:15:15 @registry.py:121][0m res2.0/conv1 input: [None, 64, 48, 48]
+[32m[1212 21:15:15 @registry.py:129][0m res2.0/conv1 output: [None, 128, 24, 24]
+[32m[1212 21:15:15 @registry.py:121][0m res2.0/conv2 input: [None, 128, 24, 24]
+[32m[1212 21:15:15 @registry.py:129][0m res2.0/conv2 output: [None, 128, 24, 24]
+[32m[1212 21:15:15 @registry.py:121][0m res2.0/shortcut input: [None, 64, 48, 48]
+[32m[1212 21:15:15 @registry.py:129][0m res2.0/shortcut output: [None, 128, 24, 24]
+[32m[1212 21:15:15 @registry.py:121][0m res2.1/conv1 input: [None, 128, 24, 24]
+[32m[1212 21:15:15 @registry.py:129][0m res2.1/conv1 output: [None, 128, 24, 24]
+[32m[1212 21:15:15 @registry.py:121][0m res2.1/conv2 input: [None, 128, 24, 24]
+[32m[1212 21:15:15 @registry.py:129][0m res2.1/conv2 output: [None, 128, 24, 24]
+[32m[1212 21:15:15 @registry.py:121][0m res3.0/conv1 input: [None, 128, 24, 24]
+[32m[1212 21:15:15 @registry.py:129][0m res3.0/conv1 output: [None, 256, 12, 12]
+[32m[1212 21:15:15 @registry.py:121][0m res3.0/conv2 input: [None, 256, 12, 12]
+[32m[1212 21:15:15 @registry.py:129][0m res3.0/conv2 output: [None, 256, 12, 12]
+[32m[1212 21:15:15 @registry.py:121][0m res3.0/shortcut input: [None, 128, 24, 24]
+[32m[1212 21:15:15 @registry.py:129][0m res3.0/shortcut output: [None, 256, 12, 12]
+[32m[1212 21:15:16 @registry.py:121][0m res3.1/conv1 input: [None, 256, 12, 12]
+[32m[1212 21:15:16 @registry.py:129][0m res3.1/conv1 output: [None, 256, 12, 12]
+[32m[1212 21:15:16 @registry.py:121][0m res3.1/conv2 input: [None, 256, 12, 12]
+[32m[1212 21:15:16 @registry.py:129][0m res3.1/conv2 output: [None, 256, 12, 12]
+[32m[1212 21:15:16 @registry.py:121][0m gap input: [None, 256, 12, 12]
+[32m[1212 21:15:16 @registry.py:129][0m gap output: [None, 256]
+[32m[1212 21:15:16 @registry.py:121][0m linear input: [None, 256]
+[32m[1212 21:15:16 @registry.py:129][0m linear output: [None, 10]
+[32m[1212 21:15:16 @regularize.py:90][0m regularize_cost() found 55 variables to regularize.
+[32m[1212 21:15:16 @regularize.py:19][0m The following tensors will be regularized: conv0/W:0, res0.0/bn/gamma:0, res0.0/bn/beta:0, res0.0/conv1/W:0, res0.0/conv1/bn/gamma:0, res0.0/conv1/bn/beta:0, res0.0/conv2/W:0, res0.0/shortcut/W:0, res0.1/bn/gamma:0, res0.1/bn/beta:0, res0.1/conv1/W:0, res0.1/conv1/bn/gamma:0, res0.1/conv1/bn/beta:0, res0.1/conv2/W:0, res1.0/bn/gamma:0, res1.0/bn/beta:0, res1.0/conv1/W:0, res1.0/conv1/bn/gamma:0, res1.0/conv1/bn/beta:0, res1.0/conv2/W:0, res1.0/shortcut/W:0, res1.1/bn/gamma:0, res1.1/bn/beta:0, res1.1/conv1/W:0, res1.1/conv1/bn/gamma:0, res1.1/conv1/bn/beta:0, res1.1/conv2/W:0, res2.0/bn/gamma:0, res2.0/bn/beta:0, res2.0/conv1/W:0, res2.0/conv1/bn/gamma:0, res2.0/conv1/bn/beta:0, res2.0/conv2/W:0, res2.0/shortcut/W:0, res2.1/bn/gamma:0, res2.1/bn/beta:0, res2.1/conv1/W:0, res2.1/conv1/bn/gamma:0, res2.1/conv1/bn/beta:0, res2.1/conv2/W:0, res3.0/bn/gamma:0, res3.0/bn/beta:0, res3.0/conv1/W:0, res3.0/conv1/bn/gamma:0, res3.0/conv1/bn/beta:0, res3.0/conv2/W:0, res3.0/shortcut/W:0, res3.1/bn/gamma:0, res3.1/bn/beta:0, res3.1/conv1/W:0, res3.1/conv1/bn/gamma:0, res3.1/conv1/bn/beta:0, res3.1/conv2/W:0, linear/W:0, linear/b:0
+[32m[1212 21:15:17 @model_utils.py:64][0m [36mTrainable Variables: 
+[0mname                     shape                dim
+-----------------------  ----------------  ------
+conv0/W:0                [3, 3, 3, 64]       1728
+res0.0/bn/gamma:0        [64]                  64
+res0.0/bn/beta:0         [64]                  64
+res0.0/conv1/W:0         [3, 3, 64, 32]     18432
+res0.0/conv1/bn/gamma:0  [32]                  32
+res0.0/conv1/bn/beta:0   [32]                  32
+res0.0/conv2/W:0         [3, 3, 32, 32]      9216
+res0.0/shortcut/W:0      [1, 1, 64, 32]      2048
+res0.1/bn/gamma:0        [32]                  32
+res0.1/bn/beta:0         [32]                  32
+res0.1/conv1/W:0         [3, 3, 32, 32]      9216
+res0.1/conv1/bn/gamma:0  [32]                  32
+res0.1/conv1/bn/beta:0   [32]                  32
+res0.1/conv2/W:0         [3, 3, 32, 32]      9216
+res1.0/bn/gamma:0        [32]                  32
+res1.0/bn/beta:0         [32]                  32
+res1.0/conv1/W:0         [3, 3, 32, 64]     18432
+res1.0/conv1/bn/gamma:0  [64]                  64
+res1.0/conv1/bn/beta:0   [64]                  64
+res1.0/conv2/W:0         [3, 3, 64, 64]     36864
+res1.0/shortcut/W:0      [1, 1, 32, 64]      2048
+res1.1/bn/gamma:0        [64]                  64
+res1.1/bn/beta:0         [64]                  64
+res1.1/conv1/W:0         [3, 3, 64, 64]     36864
+res1.1/conv1/bn/gamma:0  [64]                  64
+res1.1/conv1/bn/beta:0   [64]                  64
+res1.1/conv2/W:0         [3, 3, 64, 64]     36864
+res2.0/bn/gamma:0        [64]                  64
+res2.0/bn/beta:0         [64]                  64
+res2.0/conv1/W:0         [3, 3, 64, 128]    73728
+res2.0/conv1/bn/gamma:0  [128]                128
+res2.0/conv1/bn/beta:0   [128]                128
+res2.0/conv2/W:0         [3, 3, 128, 128]  147456
+res2.0/shortcut/W:0      [1, 1, 64, 128]     8192
+res2.1/bn/gamma:0        [128]                128
+res2.1/bn/beta:0         [128]                128
+res2.1/conv1/W:0         [3, 3, 128, 128]  147456
+res2.1/conv1/bn/gamma:0  [128]                128
+res2.1/conv1/bn/beta:0   [128]                128
+res2.1/conv2/W:0         [3, 3, 128, 128]  147456
+res3.0/bn/gamma:0        [128]                128
+res3.0/bn/beta:0         [128]                128
+res3.0/conv1/W:0         [3, 3, 128, 256]  294912
+res3.0/conv1/bn/gamma:0  [256]                256
+res3.0/conv1/bn/beta:0   [256]                256
+res3.0/conv2/W:0         [3, 3, 256, 256]  589824
+res3.0/shortcut/W:0      [1, 1, 128, 256]   32768
+res3.1/bn/gamma:0        [256]                256
+res3.1/bn/beta:0         [256]                256
+res3.1/conv1/W:0         [3, 3, 256, 256]  589824
+res3.1/conv1/bn/gamma:0  [256]                256
+res3.1/conv1/bn/beta:0   [256]                256
+res3.1/conv2/W:0         [3, 3, 256, 256]  589824
+linear/W:0               [256, 10]           2560
+linear/b:0               [10]                  10[36m
+Total #vars=55, #params=2808394, size=10.71MB[0m
+[32m[1212 21:15:17 @base.py:209][0m Setup callbacks graph ...
+[32m[1212 21:15:17 @inference_runner.py:154][0m [InferenceRunner] Building tower 'InferenceTower' on device /gpu:0 ...
+[32m[1212 21:15:17 @summary.py:38][0m Maintain moving average summary of 2 tensors in collection MOVING_SUMMARY_OPS.
+[32m[1212 21:15:17 @summary.py:75][0m Summarizing collection 'summaries' of size 25.
+[32m[1212 21:15:17 @graph.py:91][0m Applying collection UPDATE_OPS of 32 ops.
+[32m[1212 21:15:18 @base.py:230][0m Creating the session ...
+[32m[1212 21:15:19 @base.py:236][0m Initializing the session ...
+[32m[1212 21:15:19 @base.py:243][0m Graph Finalized.
+[32m[1212 21:15:19 @concurrency.py:37][0m Starting EnqueueThread QueueInput/input_queue ...
+[32m[1212 21:15:19 @inference_runner.py:101][0m [InferenceRunner] Will eval 225 iterations
+[32m[1212 21:15:19 @param.py:158][0m [HyperParamSetter] At global_step=0, learning_rate is set to 0.100000
+[32m[1212 21:15:19 @base.py:275][0m Start Epoch 1 ...
+[32m[1212 21:20:31 @base.py:285][0m Epoch 1 (global_step 897) finished, time:5 minutes 11 seconds.
+[32m[1212 21:20:31 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-897.
+[32m[1212 21:20:58 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 21:20:58 @monitor.py:459][0m cross_entropy_loss: 1.7939
+[32m[1212 21:20:58 @monitor.py:459][0m train_error: 0.74558
+[32m[1212 21:20:58 @monitor.py:459][0m validation_cost: 1.8041
+[32m[1212 21:20:58 @monitor.py:459][0m validation_error: 0.74909
+[32m[1212 21:20:58 @group.py:48][0m Callbacks took 27.290 sec in total. InferenceRunner: 26.9 seconds
+[32m[1212 21:20:58 @base.py:275][0m Start Epoch 2 ...
+[32m[1212 21:26:08 @base.py:285][0m Epoch 2 (global_step 1794) finished, time:5 minutes 10 seconds.
+[32m[1212 21:26:09 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-1794.
+[32m[1212 21:26:35 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 21:26:35 @monitor.py:459][0m cross_entropy_loss: 1.7805
+[32m[1212 21:26:35 @monitor.py:459][0m train_error: 0.74457
+[32m[1212 21:26:35 @monitor.py:459][0m validation_cost: 1.7938
+[32m[1212 21:26:35 @monitor.py:459][0m validation_error: 0.75634
+[32m[1212 21:26:35 @group.py:48][0m Callbacks took 26.745 sec in total. InferenceRunner: 26.3 seconds
+[32m[1212 21:26:35 @base.py:275][0m Start Epoch 3 ...
+[32m[1212 21:31:45 @base.py:285][0m Epoch 3 (global_step 2691) finished, time:5 minutes 10 seconds.
+[32m[1212 21:31:45 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-2691.
+[32m[1212 21:32:11 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 21:32:11 @monitor.py:459][0m cross_entropy_loss: 1.7934
+[32m[1212 21:32:11 @monitor.py:459][0m train_error: 0.76297
+[32m[1212 21:32:11 @monitor.py:459][0m validation_cost: 1.7931
+[32m[1212 21:32:11 @monitor.py:459][0m validation_error: 0.77361
+[32m[1212 21:32:11 @group.py:48][0m Callbacks took 26.267 sec in total. InferenceRunner: 25.9 seconds
+[32m[1212 21:32:11 @base.py:275][0m Start Epoch 4 ...
+[32m[1212 21:37:20 @base.py:285][0m Epoch 4 (global_step 3588) finished, time:5 minutes 8 seconds.
+[32m[1212 21:37:20 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-3588.
+[32m[1212 21:37:46 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 21:37:46 @monitor.py:459][0m cross_entropy_loss: 1.7711
+[32m[1212 21:37:46 @monitor.py:459][0m train_error: 0.72721
+[32m[1212 21:37:46 @monitor.py:459][0m validation_cost: 1.7734
+[32m[1212 21:37:46 @monitor.py:459][0m validation_error: 0.74157
+[32m[1212 21:37:46 @group.py:48][0m Callbacks took 26.244 sec in total. InferenceRunner: 25.9 seconds
+[32m[1212 21:37:46 @base.py:275][0m Start Epoch 5 ...
+[32m[1212 21:42:56 @base.py:285][0m Epoch 5 (global_step 4485) finished, time:5 minutes 10 seconds.
+[32m[1212 21:42:57 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-4485.
+[32m[1212 21:43:23 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 21:43:23 @monitor.py:459][0m cross_entropy_loss: 1.7371
+[32m[1212 21:43:23 @monitor.py:459][0m train_error: 0.70317
+[32m[1212 21:43:23 @monitor.py:459][0m validation_cost: 1.747
+[32m[1212 21:43:23 @monitor.py:459][0m validation_error: 0.71998
+[32m[1212 21:43:23 @group.py:48][0m Callbacks took 26.307 sec in total. InferenceRunner: 25.9 seconds
+[32m[1212 21:43:23 @base.py:275][0m Start Epoch 6 ...
+[32m[1212 21:48:32 @base.py:285][0m Epoch 6 (global_step 5382) finished, time:5 minutes 9 seconds.
+[32m[1212 21:48:32 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-5382.
+[32m[1212 21:48:58 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 21:48:58 @monitor.py:459][0m cross_entropy_loss: 1.753
+[32m[1212 21:48:58 @monitor.py:459][0m train_error: 0.70093
+[32m[1212 21:48:58 @monitor.py:459][0m validation_cost: 1.7282
+[32m[1212 21:48:58 @monitor.py:459][0m validation_error: 0.7027
+[32m[1212 21:48:58 @group.py:48][0m Callbacks took 26.395 sec in total. InferenceRunner: 26 seconds
+[32m[1212 21:48:58 @base.py:275][0m Start Epoch 7 ...
+[32m[1212 21:54:09 @base.py:285][0m Epoch 7 (global_step 6279) finished, time:5 minutes 10 seconds.
+[32m[1212 21:54:09 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-6279.
+[32m[1212 21:54:35 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 21:54:35 @monitor.py:459][0m cross_entropy_loss: 1.7272
+[32m[1212 21:54:35 @monitor.py:459][0m train_error: 0.69309
+[32m[1212 21:54:35 @monitor.py:459][0m validation_cost: 1.716
+[32m[1212 21:54:35 @monitor.py:459][0m validation_error: 0.70117
+[32m[1212 21:54:35 @group.py:48][0m Callbacks took 26.477 sec in total. InferenceRunner: 26.1 seconds
+[32m[1212 21:54:35 @base.py:275][0m Start Epoch 8 ...
+[32m[1212 21:59:46 @base.py:285][0m Epoch 8 (global_step 7176) finished, time:5 minutes 10 seconds.
+[32m[1212 21:59:46 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-7176.
+[32m[1212 22:00:12 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 22:00:12 @monitor.py:459][0m cross_entropy_loss: 1.6483
+[32m[1212 22:00:12 @monitor.py:459][0m train_error: 0.6535
+[32m[1212 22:00:12 @monitor.py:459][0m validation_cost: 1.6261
+[32m[1212 22:00:12 @monitor.py:459][0m validation_error: 0.6414
+[32m[1212 22:00:12 @group.py:48][0m Callbacks took 26.351 sec in total. InferenceRunner: 25.9 seconds
+[32m[1212 22:00:12 @base.py:275][0m Start Epoch 9 ...
+[32m[1212 22:05:21 @base.py:285][0m Epoch 9 (global_step 8073) finished, time:5 minutes 8 seconds.
+[32m[1212 22:05:21 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-8073.
+[32m[1212 22:05:47 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 22:05:47 @monitor.py:459][0m cross_entropy_loss: 1.5336
+[32m[1212 22:05:47 @monitor.py:459][0m train_error: 0.60373
+[32m[1212 22:05:47 @monitor.py:459][0m validation_cost: 1.5686
+[32m[1212 22:05:47 @monitor.py:459][0m validation_error: 0.61243
+[32m[1212 22:05:47 @group.py:48][0m Callbacks took 26.374 sec in total. InferenceRunner: 26 seconds
+[32m[1212 22:05:47 @base.py:275][0m Start Epoch 10 ...
+[32m[1212 22:10:57 @base.py:285][0m Epoch 10 (global_step 8970) finished, time:5 minutes 10 seconds.
+[32m[1212 22:10:58 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-8970.
+[32m[1212 22:11:24 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 22:11:24 @monitor.py:459][0m cross_entropy_loss: 1.4707
+[32m[1212 22:11:24 @monitor.py:459][0m train_error: 0.55934
+[32m[1212 22:11:24 @monitor.py:459][0m validation_cost: 1.4251
+[32m[1212 22:11:24 @monitor.py:459][0m validation_error: 0.55628
+[32m[1212 22:11:24 @group.py:48][0m Callbacks took 26.484 sec in total. InferenceRunner: 26.1 seconds
+[32m[1212 22:11:24 @base.py:275][0m Start Epoch 11 ...
+[32m[1212 22:16:35 @base.py:285][0m Epoch 11 (global_step 9867) finished, time:5 minutes 11 seconds.
+[32m[1212 22:16:36 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-9867.
+[32m[1212 22:17:02 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 22:17:02 @monitor.py:459][0m cross_entropy_loss: 1.4371
+[32m[1212 22:17:02 @monitor.py:459][0m train_error: 0.55595
+[32m[1212 22:17:02 @monitor.py:459][0m validation_cost: 1.4749
+[32m[1212 22:17:02 @monitor.py:459][0m validation_error: 0.54932
+[32m[1212 22:17:02 @group.py:48][0m Callbacks took 26.567 sec in total. InferenceRunner: 26.2 seconds
+[32m[1212 22:17:02 @base.py:275][0m Start Epoch 12 ...
+[32m[1212 22:22:13 @base.py:285][0m Epoch 12 (global_step 10764) finished, time:5 minutes 11 seconds.
+[32m[1212 22:22:13 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-10764.
+[32m[1212 22:22:39 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 22:22:39 @monitor.py:459][0m cross_entropy_loss: 1.378
+[32m[1212 22:22:39 @monitor.py:459][0m train_error: 0.54442
+[32m[1212 22:22:39 @monitor.py:459][0m validation_cost: 1.3843
+[32m[1212 22:22:39 @monitor.py:459][0m validation_error: 0.53371
+[32m[1212 22:22:39 @group.py:48][0m Callbacks took 26.228 sec in total. InferenceRunner: 25.8 seconds
+[32m[1212 22:22:39 @base.py:275][0m Start Epoch 13 ...
+[32m[1212 22:27:49 @base.py:285][0m Epoch 13 (global_step 11661) finished, time:5 minutes 10 seconds.
+[32m[1212 22:27:50 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-11661.
+[32m[1212 22:28:15 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 22:28:15 @monitor.py:459][0m cross_entropy_loss: 1.3394
+[32m[1212 22:28:15 @monitor.py:459][0m train_error: 0.51211
+[32m[1212 22:28:15 @monitor.py:459][0m validation_cost: 1.34
+[32m[1212 22:28:15 @monitor.py:459][0m validation_error: 0.51741
+[32m[1212 22:28:15 @group.py:48][0m Callbacks took 25.660 sec in total. InferenceRunner: 25.2 seconds
+[32m[1212 22:28:15 @base.py:275][0m Start Epoch 14 ...
