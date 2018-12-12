@@ -237,3 +237,48 @@ Total #vars=55, #params=2808394, size=10.71MB[0m
 [32m[1212 22:28:15 @monitor.py:459][0m validation_error: 0.51741
 [32m[1212 22:28:15 @group.py:48][0m Callbacks took 25.660 sec in total. InferenceRunner: 25.2 seconds
 [32m[1212 22:28:15 @base.py:275][0m Start Epoch 14 ...
+[32m[1212 22:33:25 @base.py:285][0m Epoch 14 (global_step 12558) finished, time:5 minutes 10 seconds.
+[32m[1212 22:33:26 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-12558.
+[32m[1212 22:33:50 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 22:33:50 @monitor.py:459][0m cross_entropy_loss: 1.3288
+[32m[1212 22:33:50 @monitor.py:459][0m train_error: 0.51164
+[32m[1212 22:33:50 @monitor.py:459][0m validation_cost: 1.3439
+[32m[1212 22:33:50 @monitor.py:459][0m validation_error: 0.50418
+[32m[1212 22:33:50 @group.py:48][0m Callbacks took 24.616 sec in total. InferenceRunner: 24.2 seconds
+[32m[1212 22:33:50 @base.py:275][0m Start Epoch 15 ...
+[32m[1212 22:39:01 @base.py:285][0m Epoch 15 (global_step 13455) finished, time:5 minutes 10 seconds.
+[32m[1212 22:39:01 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-13455.
+[32m[1212 22:39:28 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 22:39:28 @monitor.py:459][0m cross_entropy_loss: 1.2877
+[32m[1212 22:39:28 @monitor.py:459][0m train_error: 0.48084
+[32m[1212 22:39:28 @monitor.py:459][0m validation_cost: 1.291
+[32m[1212 22:39:28 @monitor.py:459][0m validation_error: 0.48468
+[32m[1212 22:39:28 @group.py:48][0m Callbacks took 27.237 sec in total. InferenceRunner: 26.8 seconds
+[32m[1212 22:39:28 @base.py:275][0m Start Epoch 16 ...
+[32m[1212 22:44:39 @base.py:285][0m Epoch 16 (global_step 14352) finished, time:5 minutes 10 seconds.
+[32m[1212 22:44:39 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-14352.
+[32m[1212 22:45:06 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 22:45:06 @monitor.py:459][0m cross_entropy_loss: 1.2797
+[32m[1212 22:45:06 @monitor.py:459][0m train_error: 0.47527
+[32m[1212 22:45:06 @monitor.py:459][0m validation_cost: 1.4106
+[32m[1212 22:45:06 @monitor.py:459][0m validation_error: 0.53943
+[32m[1212 22:45:06 @group.py:48][0m Callbacks took 26.718 sec in total. InferenceRunner: 26.3 seconds
+[32m[1212 22:45:06 @base.py:275][0m Start Epoch 17 ...
+[32m[1212 22:50:16 @base.py:285][0m Epoch 17 (global_step 15249) finished, time:5 minutes 10 seconds.
+[32m[1212 22:50:17 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-15249.
+[32m[1212 22:50:42 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 22:50:42 @monitor.py:459][0m cross_entropy_loss: 1.2302
+[32m[1212 22:50:42 @monitor.py:459][0m train_error: 0.45714
+[32m[1212 22:50:42 @monitor.py:459][0m validation_cost: 1.2817
+[32m[1212 22:50:42 @monitor.py:459][0m validation_error: 0.48704
+[32m[1212 22:50:42 @group.py:48][0m Callbacks took 25.416 sec in total. InferenceRunner: 24.7 seconds
+[32m[1212 22:50:42 @base.py:275][0m Start Epoch 18 ...
+[32m[1212 22:55:52 @base.py:285][0m Epoch 18 (global_step 16146) finished, time:5 minutes 10 seconds.
+[32m[1212 22:55:53 @saver.py:77][0m Model saved to train_log/cifar10-preact18\model-16146.
+[32m[1212 22:56:19 @monitor.py:459][0m QueueInput/queue_size: 50
+[32m[1212 22:56:19 @monitor.py:459][0m cross_entropy_loss: 1.2385
+[32m[1212 22:56:19 @monitor.py:459][0m train_error: 0.47485
+[32m[1212 22:56:19 @monitor.py:459][0m validation_cost: 1.3453
+[32m[1212 22:56:19 @monitor.py:459][0m validation_error: 0.50181
+[32m[1212 22:56:19 @group.py:48][0m Callbacks took 26.595 sec in total. InferenceRunner: 26.2 seconds
+[32m[1212 22:56:19 @base.py:275][0m Start Epoch 19 ...
