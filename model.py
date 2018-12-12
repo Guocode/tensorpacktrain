@@ -47,6 +47,7 @@ class ResNet_Cifar(ModelDesc):
                     with tf.variable_scope("res%d.%d" % (i, j)):
                         net = preactivation_block(net, FILTER_SIZES[i], stride)
             net = GlobalAvgPooling('gap', net)
+            net = Dropout(net)
             logits = FullyConnected('linear', net, CLASS_NUM,
                                     kernel_initializer=tf.random_normal_initializer(stddev=1e-3))
 

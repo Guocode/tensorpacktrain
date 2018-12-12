@@ -66,7 +66,7 @@ def get_data(train_or_test, isMixup, alpha):
         return [x, y]
 
     ds = MapData(ds, f)
-    #ds = PrefetchData(ds,2,4)
+    ds = PrefetchData(ds,2,4)
     return ds
 
 
@@ -100,4 +100,4 @@ if __name__ == '__main__':
         steps_per_epoch=len(dataset_train),
         session_init=SaverRestore(args.load) if args.load else None
     )
-    launch_train_with_config(config, SimpleTrainer())
+    launch_train_with_config(config, SimpleTrainer()) #SyncMultiGPUTrainerReplicated()
