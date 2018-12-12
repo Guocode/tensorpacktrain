@@ -18,7 +18,7 @@ from model import ResNet_Cifar
 BATCH_SIZE = 32
 CLASS_NUM = 10
 
-LR_SCHEDULE = [(0, 0.1), (100, 0.01), (150, 0.001)]
+LR_SCHEDULE = [(0, 0.01), (10, 0.001), (20, 0.0001)]
 WEIGHT_DECAY = 1e-4
 
 # FILTER_SIZES = [64, 128, 256, 512]
@@ -29,9 +29,9 @@ MODULE_SIZES = [2, 2, 2, 2]
 def get_data(train_or_test, isMixup, alpha):
     isTrain = train_or_test == 'train'
     if isTrain:
-        ds = ImageFromDir(dir="D:/facedatasetzoo/fer2013/train",channel=1,resize=112, shuffle=isTrain)
+        ds = ImageFromDir(dir="D:/facedatasetzoo/fer2013/train",channel=1,resize=100, shuffle=isTrain)
     else:
-        ds = ImageFromDir(dir="D:/facedatasetzoo/fer2013/test", channel=1, resize=112, shuffle=isTrain)
+        ds = ImageFromDir(dir="D:/facedatasetzoo/fer2013/test", channel=1, resize=100, shuffle=isTrain)
     if isTrain:
         augmentors = [
             imgaug.RandomCrop((96, 96)),
@@ -81,7 +81,7 @@ if __name__ == '__main__':
     if args.gpu:
         os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
 
-    log_folder = 'train_log/cifar10-preact18%s' % ('-mixup' if args.mixup else '')
+    log_folder = 'train_log/fer-preact18%s' % ('-mixup' if args.mixup else '')
     logger.set_logger_dir(os.path.join(log_folder))
 
     dataset_train = get_data('train', args.mixup, args.alpha)

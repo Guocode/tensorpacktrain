@@ -32,8 +32,8 @@ class ResNet_Cifar(ModelDesc):
     def build_graph(self, image, label):
         assert tf.test.is_gpu_available()
 
-        MEAN_IMAGE = tf.constant([0.4914, 0.4822, 0.4465], dtype=tf.float32)
-        STD_IMAGE = tf.constant([0.2023, 0.1994, 0.2010], dtype=tf.float32)
+        MEAN_IMAGE = tf.constant([0.4822], dtype=tf.float32)#tf.constant([0.4914, 0.4822, 0.4465], dtype=tf.float32)
+        STD_IMAGE = tf.constant([0.1994], dtype=tf.float32) #tf.constant([0.2023, 0.1994, 0.2010], dtype=tf.float32)
         image = ((image / 255.0) - MEAN_IMAGE) / STD_IMAGE
         image = tf.transpose(image, [0, 3, 1, 2])
 
